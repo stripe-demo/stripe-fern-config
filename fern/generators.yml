@@ -1,8 +1,8 @@
 # yaml-language-server: $schema=https://schema.buildwithfern.dev/generators-yml.json
 api:
   specs:
-    - openapi: openapi.yaml
-      overrides: overrides.yml
+    - openapi: ../openapi.yaml
+      overrides: ../openapi-overrides.yml
       settings:
         prefer-undiscriminated-unions-with-literals: true
         title-as-schema-name: false
