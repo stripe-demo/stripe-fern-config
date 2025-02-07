@@ -1,0 +1,89 @@
+instances:
+  - url: https://stripe.docs.buildwithfern.com
+title: Stripe | Documentation
+
+landing-page:
+  page: Welcome
+  path: pages/landing-page.mdx
+  slug: /
+
+logo: 
+  light: assets/logo-light.svg
+
+tabs:
+  get-started:
+    display-name: Get started
+  payments:
+    display-name: Payments
+  finance-automation:
+    display-name: Finance automation
+  platforms-and-marketplaces:
+    display-name: Platforms and marketplaces
+  banking-as-a-service:
+    display-name: Banking as a service
+  developer-tools:
+    display-name: Developer tools
+  api: 
+    display-name: API reference  
+
+navigation:
+  - tab: get-started
+    layout: 
+      - page: Home
+        path: pages/home.mdx
+  - tab: payments
+    layout: 
+      - page: Home
+        path: pages/home.mdx
+  - tab: finance-automation
+    layout: 
+      - page: Home
+        path: pages/home.mdx
+  - tab: platforms-and-marketplaces
+    layout: 
+      - page: Home
+        path: pages/home.mdx
+  - tab: banking-as-a-service
+    layout: 
+      - page: Home
+        path: pages/home.mdx
+  - tab: developer-tools
+    layout: 
+      - page: Home
+        path: pages/home.mdx
+  - tab: api
+    layout:
+      - api: API Reference
+        paginated: true
+
+
+layout:
+  tabs-placement: header
+  searchbar-placement: header
+  page-width: full
+
+colors:
+  accent-primary: 
+    light: '#635bff'
+    dark: '#635bff'
+  header-background: 
+    light: '#f7fafc'
+    dark: '#0a2540'
+  card-background: 
+    light: '#ffffff'
+    dark: '#0a2540'
+  background: 
+    light: '#ffffff'
+    dark: '#0a2540'
+  sidebar-background: 
+    light: '#ffffff'
+    dark: '#0a2540'
+  border: 
+    light: '#d8dee4'
+    dark: '#1a202c'
+
+css: 
+  - ./css/sail.css
+  - ./css/shell.css
+  - ./css/stripe.css
+  - ./css/styles.css

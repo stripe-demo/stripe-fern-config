@@ -1,0 +1,59 @@
+:is(.dark) .HomepageBackground--overlay {
+  background-image: radial-gradient(rgba(0, 0, 0, 0) 1.5px, #0a2540 1px);
+}
+
+:is(.dark) h1, :is(.dark) h2, :is(.dark) h6 {
+  color: #fff;
+}
+
+:is(.dark) .ProductGridItem--content {
+  background-color: #0a2540 !important;
+}
+
+:is(.dark) .Text-color--default {
+  color: var(--grayscale-a11);
+}
+
+.padded {
+  padding-top: 48px;
+  
+  .HomepageBackground {
+    z-index: -1 !important;
+  }
+  
+  .HomepageBackground--overlay {
+    z-index: -1 !important;
+  }
+  
+  .Box-root {
+    box-sizing: border-box;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  h2 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-weight: 400;
+  }
+  
+  .fern-button.filled {
+    margin-right: 16px;
+  }
+  
+  .row button {
+    margin-top: 16px;
+  }
+  
+  .fern-card a {
+    text-decoration: none;
+  }
+  
+  .ProductGridItem:hover .ProductGridItem--shadow {
+    opacity: 1 !important;
+  }
+}
+
