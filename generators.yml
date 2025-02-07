@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://schema.buildwithfern.dev/generators-yml.json
+api:
+  specs:
+    - openapi: openapi.yaml
+      overrides: overrides.yml
+      settings:
+        prefer-undiscriminated-unions-with-literals: true
+        title-as-schema-name: false
+groups:
+  ts-sdk:
+    generators:
+      - name: fernapi/fern-typescript-node-sdk
+        version: 0.48.5
+        output:
+          location: npm
+          package-name: stripe
+        github: 
+          repository: stripe-demo/stripe-node
+        metadata:
+          license: MIT
+        smart-casing: true
+        config: 
+          noSerdeLayer: true
+          enableInlineTypes: true
+          namespaceExport: Stripe
+          inlinePathParameters: true
+          inlineFileProperties: true
+          skipResponseValidation: true

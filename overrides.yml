@@ -1,0 +1,2338 @@
+paths:
+  /v1/accounts/{account}:
+    delete:
+      x-fern-sdk-group-name: account
+      x-fern-sdk-method-name: delete
+    post:
+      x-fern-sdk-group-name: account
+      x-fern-sdk-method-name: update
+  /v1/account:
+    get:
+      x-fern-sdk-group-name: account
+      x-fern-sdk-method-name: retrieve
+  /v1/accounts:
+    get:
+      x-fern-sdk-group-name: account
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: account
+      x-fern-sdk-method-name: create
+  /v1/accounts/{account}/capabilities:
+    get:
+      x-fern-sdk-group-name: capability
+      x-fern-sdk-method-name: list
+  /v1/accounts/{account}/persons:
+    get:
+      x-fern-sdk-group-name: person
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: person
+      x-fern-sdk-method-name: create
+  /v1/accounts/{account}/reject:
+    post:
+      x-fern-sdk-group-name: account
+      x-fern-sdk-method-name: reject
+  /v1/account_links:
+    post:
+      x-fern-sdk-group-name: account_link
+      x-fern-sdk-method-name: create
+  /v1/account_sessions:
+    post:
+      x-fern-sdk-group-name: account_session
+      x-fern-sdk-method-name: create
+  /v1/apple_pay/domains/{domain}:
+    delete:
+      x-fern-sdk-group-name: apple_pay_domain
+      x-fern-sdk-method-name: delete
+    get:
+      x-fern-sdk-group-name: apple_pay_domain
+      x-fern-sdk-method-name: retrieve
+  /v1/apple_pay/domains:
+    get:
+      x-fern-sdk-group-name: apple_pay_domain
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: apple_pay_domain
+      x-fern-sdk-method-name: create
+  /v1/application_fees:
+    get:
+      x-fern-sdk-group-name: application_fee
+      x-fern-sdk-method-name: list
+  /v1/application_fees/{id}:
+    get:
+      x-fern-sdk-group-name: application_fee
+      x-fern-sdk-method-name: retrieve
+  /v1/apps/secrets:
+    get:
+      x-fern-sdk-group-name:
+        - apps
+        - secret
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name:
+        - apps
+        - secret
+      x-fern-sdk-method-name: create
+  /v1/apps/secrets/find:
+    get:
+      x-fern-sdk-group-name:
+        - apps
+        - secret
+      x-fern-sdk-method-name: find
+  /v1/apps/secrets/delete:
+    post:
+      x-fern-sdk-group-name:
+        - apps
+        - secret
+      x-fern-sdk-method-name: delete_where
+  /v1/balance:
+    get:
+      x-fern-sdk-group-name: balance
+      x-fern-sdk-method-name: retrieve
+  /v1/balance_transactions:
+    get:
+      x-fern-sdk-group-name: balance_transaction
+      x-fern-sdk-method-name: list
+  /v1/balance_transactions/{id}:
+    get:
+      x-fern-sdk-group-name: balance_transaction
+      x-fern-sdk-method-name: retrieve
+  /v1/accounts/{account}/external_accounts/{id}:
+    delete:
+      x-fern-sdk-group-name: external_account
+      x-fern-sdk-method-name: delete
+    post:
+      x-fern-sdk-group-name: external_account
+      x-fern-sdk-method-name: update
+    get:
+      x-fern-sdk-group-name: external_account
+      x-fern-sdk-method-name: retrieve
+  /v1/customers/{customer}/sources/{id}/verify:
+    post:
+      x-fern-sdk-group-name: bank_account
+      x-fern-sdk-method-name: verify
+  /v1/billing/alerts:
+    get:
+      x-fern-sdk-group-name:
+        - billing
+        - alert
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name:
+        - billing
+        - alert
+      x-fern-sdk-method-name: create
+  /v1/billing/alerts/{id}:
+    get:
+      x-fern-sdk-group-name:
+        - billing
+        - alert
+      x-fern-sdk-method-name: retrieve
+  /v1/billing/alerts/{id}/activate:
+    post:
+      x-fern-sdk-group-name:
+        - billing
+        - alert
+      x-fern-sdk-method-name: activate
+  /v1/billing/alerts/{id}/archive:
+    post:
+      x-fern-sdk-group-name:
+        - billing
+        - alert
+      x-fern-sdk-method-name: archive
+  /v1/billing/alerts/{id}/deactivate:
+    post:
+      x-fern-sdk-group-name:
+        - billing
+        - alert
+      x-fern-sdk-method-name: deactivate
+  /v1/billing/credit_balance_summary:
+    get:
+      x-fern-sdk-group-name:
+        - billing
+        - credit_balance_summary
+      x-fern-sdk-method-name: retrieve
+  /v1/billing/credit_balance_transactions:
+    get:
+      x-fern-sdk-group-name:
+        - billing
+        - credit_balance_transaction
+      x-fern-sdk-method-name: list
+  /v1/billing/credit_balance_transactions/{id}:
+    get:
+      x-fern-sdk-group-name:
+        - billing
+        - credit_balance_transaction
+      x-fern-sdk-method-name: retrieve
+  /v1/billing/credit_grants:
+    get:
+      x-fern-sdk-group-name:
+        - billing
+        - credit_grant
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name:
+        - billing
+        - credit_grant
+      x-fern-sdk-method-name: create
+  /v1/billing/credit_grants/{id}:
+    get:
+      x-fern-sdk-group-name:
+        - billing
+        - credit_grant
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name:
+        - billing
+        - credit_grant
+      x-fern-sdk-method-name: update
+  /v1/billing/credit_grants/{id}/expire:
+    post:
+      x-fern-sdk-group-name:
+        - billing
+        - credit_grant
+      x-fern-sdk-method-name: expire
+  /v1/billing/credit_grants/{id}/void:
+    post:
+      x-fern-sdk-group-name:
+        - billing
+        - credit_grant
+      x-fern-sdk-method-name: void_grant
+  /v1/billing/meters:
+    get:
+      x-fern-sdk-group-name:
+        - billing
+        - meter
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name:
+        - billing
+        - meter
+      x-fern-sdk-method-name: create
+  /v1/billing/meters/{id}:
+    get:
+      x-fern-sdk-group-name:
+        - billing
+        - meter
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name:
+        - billing
+        - meter
+      x-fern-sdk-method-name: update
+  /v1/billing/meters/{id}/deactivate:
+    post:
+      x-fern-sdk-group-name:
+        - billing
+        - meter
+      x-fern-sdk-method-name: deactivate
+  /v1/billing/meters/{id}/reactivate:
+    post:
+      x-fern-sdk-group-name:
+        - billing
+        - meter
+      x-fern-sdk-method-name: reactivate
+  /v1/billing/meter_events:
+    post:
+      x-fern-sdk-group-name:
+        - billing
+        - meter_event
+      x-fern-sdk-method-name: create
+  /v1/billing/meter_event_adjustments:
+    post:
+      x-fern-sdk-group-name:
+        - billing
+        - meter_event_adjustment
+      x-fern-sdk-method-name: create
+  /v1/billing/meters/{id}/event_summaries:
+    get:
+      x-fern-sdk-group-name:
+        - billing
+        - meter_event_summary
+      x-fern-sdk-method-name: list
+  /v1/billing_portal/configurations:
+    get:
+      x-fern-sdk-group-name:
+        - billing_portal
+        - configuration
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name:
+        - billing_portal
+        - configuration
+      x-fern-sdk-method-name: create
+  /v1/billing_portal/configurations/{configuration}:
+    get:
+      x-fern-sdk-group-name:
+        - billing_portal
+        - configuration
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name:
+        - billing_portal
+        - configuration
+      x-fern-sdk-method-name: update
+  /v1/billing_portal/sessions:
+    post:
+      x-fern-sdk-group-name:
+        - billing_portal
+        - session
+      x-fern-sdk-method-name: create
+  /v1/accounts/{account}/capabilities/{capability}:
+    get:
+      x-fern-sdk-group-name: capability
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name: capability
+      x-fern-sdk-method-name: update
+  /v1/customers/{customer}/cash_balance:
+    get:
+      x-fern-sdk-group-name: cash_balance
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name: cash_balance
+      x-fern-sdk-method-name: update
+  /v1/charges:
+    get:
+      x-fern-sdk-group-name: charge
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: charge
+      x-fern-sdk-method-name: create
+  /v1/charges/{charge}:
+    get:
+      x-fern-sdk-group-name: charge
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name: charge
+      x-fern-sdk-method-name: update
+  /v1/charges/search:
+    get:
+      x-fern-sdk-group-name: charge
+      x-fern-sdk-method-name: search
+  /v1/charges/{charge}/capture:
+    post:
+      x-fern-sdk-group-name: charge
+      x-fern-sdk-method-name: capture
+  /v1/checkout/sessions:
+    get:
+      x-fern-sdk-group-name:
+        - checkout
+        - session
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name:
+        - checkout
+        - session
+      x-fern-sdk-method-name: create
+  /v1/checkout/sessions/{session}:
+    get:
+      x-fern-sdk-group-name:
+        - checkout
+        - session
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name:
+        - checkout
+        - session
+      x-fern-sdk-method-name: update
+  /v1/checkout/sessions/{session}/line_items:
+    get:
+      x-fern-sdk-group-name:
+        - checkout
+        - session
+      x-fern-sdk-method-name: list_line_items
+  /v1/checkout/sessions/{session}/expire:
+    post:
+      x-fern-sdk-group-name:
+        - checkout
+        - session
+      x-fern-sdk-method-name: expire
+  /v1/climate/orders:
+    get:
+      x-fern-sdk-group-name:
+        - climate
+        - order
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name:
+        - climate
+        - order
+      x-fern-sdk-method-name: create
+  /v1/climate/orders/{order}:
+    get:
+      x-fern-sdk-group-name:
+        - climate
+        - order
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name:
+        - climate
+        - order
+      x-fern-sdk-method-name: update
+  /v1/climate/orders/{order}/cancel:
+    post:
+      x-fern-sdk-group-name:
+        - climate
+        - order
+      x-fern-sdk-method-name: cancel
+  /v1/climate/products:
+    get:
+      x-fern-sdk-group-name:
+        - climate
+        - product
+      x-fern-sdk-method-name: list
+  /v1/climate/products/{product}:
+    get:
+      x-fern-sdk-group-name:
+        - climate
+        - product
+      x-fern-sdk-method-name: retrieve
+  /v1/climate/suppliers:
+    get:
+      x-fern-sdk-group-name:
+        - climate
+        - supplier
+      x-fern-sdk-method-name: list
+  /v1/climate/suppliers/{supplier}:
+    get:
+      x-fern-sdk-group-name:
+        - climate
+        - supplier
+      x-fern-sdk-method-name: retrieve
+  /v1/confirmation_tokens/{confirmation_token}:
+    get:
+      x-fern-sdk-group-name: confirmation_token
+      x-fern-sdk-method-name: retrieve
+  /v1/test_helpers/confirmation_tokens:
+    post:
+      x-fern-sdk-group-name: confirmation_token
+      x-fern-sdk-method-name: create
+  /v1/country_specs:
+    get:
+      x-fern-sdk-group-name: country_spec
+      x-fern-sdk-method-name: list
+  /v1/country_specs/{country}:
+    get:
+      x-fern-sdk-group-name: country_spec
+      x-fern-sdk-method-name: retrieve
+  /v1/coupons/{coupon}:
+    delete:
+      x-fern-sdk-group-name: coupon
+      x-fern-sdk-method-name: delete
+    get:
+      x-fern-sdk-group-name: coupon
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name: coupon
+      x-fern-sdk-method-name: update
+  /v1/coupons:
+    get:
+      x-fern-sdk-group-name: coupon
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: coupon
+      x-fern-sdk-method-name: create
+  /v1/credit_notes:
+    get:
+      x-fern-sdk-group-name: credit_note
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: credit_note
+      x-fern-sdk-method-name: create
+  /v1/credit_notes/{id}:
+    get:
+      x-fern-sdk-group-name: credit_note
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name: credit_note
+      x-fern-sdk-method-name: update
+  /v1/credit_notes/preview:
+    get:
+      x-fern-sdk-group-name: credit_note
+      x-fern-sdk-method-name: preview
+  /v1/credit_notes/preview/lines:
+    get:
+      x-fern-sdk-group-name: credit_note
+      x-fern-sdk-method-name: preview_lines
+  /v1/credit_notes/{id}/void:
+    post:
+      x-fern-sdk-group-name: credit_note
+      x-fern-sdk-method-name: void_credit_note
+  /v1/credit_notes/{credit_note}/lines:
+    get:
+      x-fern-sdk-group-name: credit_note_line_item
+      x-fern-sdk-method-name: list
+  /v1/customers/{customer}:
+    delete:
+      x-fern-sdk-group-name: customer
+      x-fern-sdk-method-name: delete
+    get:
+      x-fern-sdk-group-name: customer
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name: customer
+      x-fern-sdk-method-name: update
+  /v1/customers/{customer}/discount:
+    delete:
+      x-fern-sdk-group-name: customer
+      x-fern-sdk-method-name: delete_discount
+  /v1/customers:
+    get:
+      x-fern-sdk-group-name: customer
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: customer
+      x-fern-sdk-method-name: create
+  /v1/customers/{customer}/balance_transactions:
+    get:
+      x-fern-sdk-group-name: customer_balance_transaction
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: customer_balance_transaction
+      x-fern-sdk-method-name: create
+  /v1/customers/{customer}/payment_methods:
+    get:
+      x-fern-sdk-group-name: customer
+      x-fern-sdk-method-name: list_payment_methods
+  /v1/customers/{customer}/payment_methods/{payment_method}:
+    get:
+      x-fern-sdk-group-name: customer
+      x-fern-sdk-method-name: retrieve_payment_method
+  /v1/customers/search:
+    get:
+      x-fern-sdk-group-name: customer
+      x-fern-sdk-method-name: search
+  /v1/customers/{customer}/funding_instructions:
+    post:
+      x-fern-sdk-group-name: customer
+      x-fern-sdk-method-name: create_funding_instructions
+  /v1/test_helpers/customers/{customer}/fund_cash_balance:
+    post:
+      x-fern-sdk-group-name: customer
+      x-fern-sdk-method-name: fund_cash_balance
+  /v1/customers/{customer}/balance_transactions/{transaction}:
+    get:
+      x-fern-sdk-group-name: customer_balance_transaction
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name: customer_balance_transaction
+      x-fern-sdk-method-name: update
+  /v1/customers/{customer}/cash_balance_transactions:
+    get:
+      x-fern-sdk-group-name: customer_cash_balance_transaction
+      x-fern-sdk-method-name: list
+  /v1/customers/{customer}/cash_balance_transactions/{transaction}:
+    get:
+      x-fern-sdk-group-name: customer_cash_balance_transaction
+      x-fern-sdk-method-name: retrieve
+  /v1/customer_sessions:
+    post:
+      x-fern-sdk-group-name: customer_session
+      x-fern-sdk-method-name: create
+  /v1/disputes:
+    get:
+      x-fern-sdk-group-name: dispute
+      x-fern-sdk-method-name: list
+  /v1/disputes/{dispute}:
+    get:
+      x-fern-sdk-group-name: dispute
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name: dispute
+      x-fern-sdk-method-name: update
+  /v1/disputes/{dispute}/close:
+    post:
+      x-fern-sdk-group-name: dispute
+      x-fern-sdk-method-name: close
+  /v1/entitlements/active_entitlements:
+    get:
+      x-fern-sdk-group-name:
+        - entitlements
+        - active_entitlement
+      x-fern-sdk-method-name: list
+  /v1/entitlements/active_entitlements/{id}:
+    get:
+      x-fern-sdk-group-name:
+        - entitlements
+        - active_entitlement
+      x-fern-sdk-method-name: retrieve
+  /v1/entitlements/features:
+    get:
+      x-fern-sdk-group-name:
+        - entitlements
+        - feature
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name:
+        - entitlements
+        - feature
+      x-fern-sdk-method-name: create
+  /v1/entitlements/features/{id}:
+    get:
+      x-fern-sdk-group-name:
+        - entitlements
+        - feature
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name:
+        - entitlements
+        - feature
+      x-fern-sdk-method-name: update
+  /v1/ephemeral_keys/{key}:
+    delete:
+      x-fern-sdk-group-name: ephemeral_key
+      x-fern-sdk-method-name: delete
+  /v1/ephemeral_keys:
+    post:
+      x-fern-sdk-group-name: ephemeral_key
+      x-fern-sdk-method-name: create
+  /v1/events:
+    get:
+      x-fern-sdk-group-name: event
+      x-fern-sdk-method-name: list
+  /v1/events/{id}:
+    get:
+      x-fern-sdk-group-name: event
+      x-fern-sdk-method-name: retrieve
+  /v1/exchange_rates:
+    get:
+      x-fern-sdk-group-name: exchange_rate
+      x-fern-sdk-method-name: list
+  /v1/exchange_rates/{rate_id}:
+    get:
+      x-fern-sdk-group-name: exchange_rate
+      x-fern-sdk-method-name: retrieve
+  /v1/accounts/{account}/external_accounts:
+    get:
+      x-fern-sdk-group-name: external_account
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: external_account
+      x-fern-sdk-method-name: create
+  /v1/application_fees/{fee}/refunds/{id}:
+    get:
+      x-fern-sdk-group-name: fee_refund
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name: fee_refund
+      x-fern-sdk-method-name: update
+  /v1/application_fees/{id}/refunds:
+    get:
+      x-fern-sdk-group-name: fee_refund
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: fee_refund
+      x-fern-sdk-method-name: create
+  /v1/files:
+    get:
+      x-fern-sdk-group-name: file
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-ignore: true
+  /v1/files/{file}:
+    get:
+      x-fern-sdk-group-name: file
+      x-fern-sdk-method-name: retrieve
+  /v1/file_links:
+    get:
+      x-fern-sdk-group-name: file_link
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: file_link
+      x-fern-sdk-method-name: create
+  /v1/file_links/{link}:
+    get:
+      x-fern-sdk-group-name: file_link
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name: file_link
+      x-fern-sdk-method-name: update
+  /v1/financial_connections/accounts:
+    get:
+      x-fern-sdk-group-name:
+        - financial_connections
+        - account
+      x-fern-sdk-method-name: list
+  /v1/financial_connections/accounts/{account}:
+    get:
+      x-fern-sdk-group-name:
+        - financial_connections
+        - account
+      x-fern-sdk-method-name: retrieve
+  /v1/financial_connections/accounts/{account}/owners:
+    get:
+      x-fern-sdk-group-name:
+        - financial_connections
+        - account
+      x-fern-sdk-method-name: list_owners
+  /v1/financial_connections/accounts/{account}/disconnect:
+    post:
+      x-fern-sdk-group-name:
+        - financial_connections
+        - account
+      x-fern-sdk-method-name: disconnect
+  /v1/financial_connections/accounts/{account}/refresh:
+    post:
+      x-fern-sdk-group-name:
+        - financial_connections
+        - account
+      x-fern-sdk-method-name: refresh
+  /v1/financial_connections/accounts/{account}/subscribe:
+    post:
+      x-fern-sdk-group-name:
+        - financial_connections
+        - account
+      x-fern-sdk-method-name: subscribe
+  /v1/financial_connections/accounts/{account}/unsubscribe:
+    post:
+      x-fern-sdk-group-name:
+        - financial_connections
+        - account
+      x-fern-sdk-method-name: unsubscribe
+  /v1/financial_connections/sessions/{session}:
+    get:
+      x-fern-sdk-group-name:
+        - financial_connections
+        - session
+      x-fern-sdk-method-name: retrieve
+  /v1/financial_connections/sessions:
+    post:
+      x-fern-sdk-group-name:
+        - financial_connections
+        - session
+      x-fern-sdk-method-name: create
+  /v1/financial_connections/transactions:
+    get:
+      x-fern-sdk-group-name:
+        - financial_connections
+        - transaction
+      x-fern-sdk-method-name: list
+  /v1/financial_connections/transactions/{transaction}:
+    get:
+      x-fern-sdk-group-name:
+        - financial_connections
+        - transaction
+      x-fern-sdk-method-name: retrieve
+  /v1/forwarding/requests:
+    get:
+      x-fern-sdk-group-name:
+        - forwarding
+        - request
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name:
+        - forwarding
+        - request
+      x-fern-sdk-method-name: create
+  /v1/forwarding/requests/{id}:
+    get:
+      x-fern-sdk-group-name:
+        - forwarding
+        - request
+      x-fern-sdk-method-name: retrieve
+  /v1/identity/verification_reports:
+    get:
+      x-fern-sdk-group-name:
+        - identity
+        - verification_report
+      x-fern-sdk-method-name: list
+  /v1/identity/verification_reports/{report}:
+    get:
+      x-fern-sdk-group-name:
+        - identity
+        - verification_report
+      x-fern-sdk-method-name: retrieve
+  /v1/identity/verification_sessions:
+    get:
+      x-fern-sdk-group-name:
+        - identity
+        - verification_session
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name:
+        - identity
+        - verification_session
+      x-fern-sdk-method-name: create
+  /v1/identity/verification_sessions/{session}:
+    get:
+      x-fern-sdk-group-name:
+        - identity
+        - verification_session
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name:
+        - identity
+        - verification_session
+      x-fern-sdk-method-name: update
+  /v1/identity/verification_sessions/{session}/cancel:
+    post:
+      x-fern-sdk-group-name:
+        - identity
+        - verification_session
+      x-fern-sdk-method-name: cancel
+  /v1/identity/verification_sessions/{session}/redact:
+    post:
+      x-fern-sdk-group-name:
+        - identity
+        - verification_session
+      x-fern-sdk-method-name: redact
+  /v1/invoices/{invoice}:
+    delete:
+      x-fern-sdk-group-name: invoice
+      x-fern-sdk-method-name: delete
+    get:
+      x-fern-sdk-group-name: invoice
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name: invoice
+      x-fern-sdk-method-name: update
+  /v1/invoices:
+    get:
+      x-fern-sdk-group-name: invoice
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: invoice
+      x-fern-sdk-method-name: create
+  /v1/invoices/search:
+    get:
+      x-fern-sdk-group-name: invoice
+      x-fern-sdk-method-name: search
+  /v1/invoices/upcoming:
+    get:
+      x-fern-sdk-group-name: invoice
+      x-fern-sdk-method-name: upcoming
+  /v1/invoices/upcoming/lines:
+    get:
+      x-fern-sdk-group-name: invoice
+      x-fern-sdk-method-name: upcomingLines
+  /v1/invoices/{invoice}/add_lines:
+    post:
+      x-fern-sdk-group-name: invoice
+      x-fern-sdk-method-name: add_lines
+  /v1/invoices/{invoice}/finalize:
+    post:
+      x-fern-sdk-group-name: invoice
+      x-fern-sdk-method-name: finalize_invoice
+  /v1/invoices/{invoice}/mark_uncollectible:
+    post:
+      x-fern-sdk-group-name: invoice
+      x-fern-sdk-method-name: mark_uncollectible
+  /v1/invoices/{invoice}/pay:
+    post:
+      x-fern-sdk-group-name: invoice
+      x-fern-sdk-method-name: pay
+  /v1/invoices/{invoice}/remove_lines:
+    post:
+      x-fern-sdk-group-name: invoice
+      x-fern-sdk-method-name: remove_lines
+  /v1/invoices/{invoice}/send:
+    post:
+      x-fern-sdk-group-name: invoice
+      x-fern-sdk-method-name: send_invoice
+  /v1/invoices/{invoice}/update_lines:
+    post:
+      x-fern-sdk-group-name: invoice
+      x-fern-sdk-method-name: update_lines
+  /v1/invoices/{invoice}/void:
+    post:
+      x-fern-sdk-group-name: invoice
+      x-fern-sdk-method-name: void_invoice
+  /v1/invoices/create_preview:
+    post:
+      x-fern-sdk-group-name: invoice
+      x-fern-sdk-method-name: create_preview
+  /v1/invoice_rendering_templates:
+    get:
+      x-fern-sdk-group-name: invoice_rendering_template
+      x-fern-sdk-method-name: list
+  /v1/invoice_rendering_templates/{template}:
+    get:
+      x-fern-sdk-group-name: invoice_rendering_template
+      x-fern-sdk-method-name: retrieve
+  /v1/invoice_rendering_templates/{template}/archive:
+    post:
+      x-fern-sdk-group-name: invoice_rendering_template
+      x-fern-sdk-method-name: archive
+  /v1/invoice_rendering_templates/{template}/unarchive:
+    post:
+      x-fern-sdk-group-name: invoice_rendering_template
+      x-fern-sdk-method-name: unarchive
+  /v1/invoiceitems/{invoiceitem}:
+    delete:
+      x-fern-sdk-group-name: invoiceitem
+      x-fern-sdk-method-name: delete
+    get:
+      x-fern-sdk-group-name: invoiceitem
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name: invoiceitem
+      x-fern-sdk-method-name: update
+  /v1/invoiceitems:
+    get:
+      x-fern-sdk-group-name: invoiceitem
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: invoiceitem
+      x-fern-sdk-method-name: create
+  /v1/issuing/authorizations:
+    get:
+      x-fern-sdk-group-name:
+        - issuing
+        - authorization
+      x-fern-sdk-method-name: list
+  /v1/issuing/authorizations/{authorization}:
+    get:
+      x-fern-sdk-group-name:
+        - issuing
+        - authorization
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name:
+        - issuing
+        - authorization
+      x-fern-sdk-method-name: update
+  /v1/issuing/authorizations/{authorization}/approve:
+    post:
+      x-fern-sdk-group-name:
+        - issuing
+        - authorization
+      x-fern-sdk-method-name: approve
+  /v1/issuing/authorizations/{authorization}/decline:
+    post:
+      x-fern-sdk-group-name:
+        - issuing
+        - authorization
+      x-fern-sdk-method-name: decline
+  /v1/test_helpers/issuing/authorizations:
+    post:
+      x-fern-sdk-group-name:
+        - issuing
+        - authorization
+      x-fern-sdk-method-name: create
+  /v1/test_helpers/issuing/authorizations/{authorization}/capture:
+    post:
+      x-fern-sdk-group-name:
+        - issuing
+        - authorization
+      x-fern-sdk-method-name: capture
+  /v1/test_helpers/issuing/authorizations/{authorization}/expire:
+    post:
+      x-fern-sdk-group-name:
+        - issuing
+        - authorization
+      x-fern-sdk-method-name: expire
+  /v1/test_helpers/issuing/authorizations/{authorization}/finalize_amount:
+    post:
+      x-fern-sdk-group-name:
+        - issuing
+        - authorization
+      x-fern-sdk-method-name: finalize_amount
+  /v1/test_helpers/issuing/authorizations/{authorization}/fraud_challenges/respond:
+    post:
+      x-fern-sdk-group-name:
+        - issuing
+        - authorization
+      x-fern-sdk-method-name: respond
+  /v1/test_helpers/issuing/authorizations/{authorization}/increment:
+    post:
+      x-fern-sdk-group-name:
+        - issuing
+        - authorization
+      x-fern-sdk-method-name: increment
+  /v1/test_helpers/issuing/authorizations/{authorization}/reverse:
+    post:
+      x-fern-sdk-group-name:
+        - issuing
+        - authorization
+      x-fern-sdk-method-name: reverse
+  /v1/issuing/cards:
+    get:
+      x-fern-sdk-group-name:
+        - issuing
+        - card
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name:
+        - issuing
+        - card
+      x-fern-sdk-method-name: create
+  /v1/issuing/cards/{card}:
+    get:
+      x-fern-sdk-group-name:
+        - issuing
+        - card
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name:
+        - issuing
+        - card
+      x-fern-sdk-method-name: update
+  /v1/test_helpers/issuing/cards/{card}/shipping/deliver:
+    post:
+      x-fern-sdk-group-name:
+        - issuing
+        - card
+      x-fern-sdk-method-name: deliver_card
+  /v1/test_helpers/issuing/cards/{card}/shipping/fail:
+    post:
+      x-fern-sdk-group-name:
+        - issuing
+        - card
+      x-fern-sdk-method-name: fail_card
+  /v1/test_helpers/issuing/cards/{card}/shipping/return:
+    post:
+      x-fern-sdk-group-name:
+        - issuing
+        - card
+      x-fern-sdk-method-name: return_card
+  /v1/test_helpers/issuing/cards/{card}/shipping/ship:
+    post:
+      x-fern-sdk-group-name:
+        - issuing
+        - card
+      x-fern-sdk-method-name: ship_card
+  /v1/test_helpers/issuing/cards/{card}/shipping/submit:
+    post:
+      x-fern-sdk-group-name:
+        - issuing
+        - card
+      x-fern-sdk-method-name: submit_card
+  /v1/issuing/cardholders:
+    get:
+      x-fern-sdk-group-name:
+        - issuing
+        - cardholder
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name:
+        - issuing
+        - cardholder
+      x-fern-sdk-method-name: create
+  /v1/issuing/cardholders/{cardholder}:
+    get:
+      x-fern-sdk-group-name:
+        - issuing
+        - cardholder
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name:
+        - issuing
+        - cardholder
+      x-fern-sdk-method-name: update
+  /v1/issuing/disputes:
+    get:
+      x-fern-sdk-group-name:
+        - issuing
+        - dispute
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name:
+        - issuing
+        - dispute
+      x-fern-sdk-method-name: create
+  /v1/issuing/disputes/{dispute}:
+    get:
+      x-fern-sdk-group-name:
+        - issuing
+        - dispute
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name:
+        - issuing
+        - dispute
+      x-fern-sdk-method-name: update
+  /v1/issuing/disputes/{dispute}/submit:
+    post:
+      x-fern-sdk-group-name:
+        - issuing
+        - dispute
+      x-fern-sdk-method-name: submit
+  /v1/issuing/personalization_designs:
+    get:
+      x-fern-sdk-group-name:
+        - issuing
+        - personalization_design
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name:
+        - issuing
+        - personalization_design
+      x-fern-sdk-method-name: create
+  /v1/issuing/personalization_designs/{personalization_design}:
+    get:
+      x-fern-sdk-group-name:
+        - issuing
+        - personalization_design
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name:
+        - issuing
+        - personalization_design
+      x-fern-sdk-method-name: update
+  /v1/test_helpers/issuing/personalization_designs/{personalization_design}/activate:
+    post:
+      x-fern-sdk-group-name:
+        - issuing
+        - personalization_design
+      x-fern-sdk-method-name: activate
+  /v1/test_helpers/issuing/personalization_designs/{personalization_design}/deactivate:
+    post:
+      x-fern-sdk-group-name:
+        - issuing
+        - personalization_design
+      x-fern-sdk-method-name: deactivate
+  /v1/test_helpers/issuing/personalization_designs/{personalization_design}/reject:
+    post:
+      x-fern-sdk-group-name:
+        - issuing
+        - personalization_design
+      x-fern-sdk-method-name: reject
+  /v1/issuing/physical_bundles:
+    get:
+      x-fern-sdk-group-name:
+        - issuing
+        - physical_bundle
+      x-fern-sdk-method-name: list
+  /v1/issuing/physical_bundles/{physical_bundle}:
+    get:
+      x-fern-sdk-group-name:
+        - issuing
+        - physical_bundle
+      x-fern-sdk-method-name: retrieve
+  /v1/issuing/tokens:
+    get:
+      x-fern-sdk-group-name:
+        - issuing
+        - token
+      x-fern-sdk-method-name: list
+  /v1/issuing/tokens/{token}:
+    get:
+      x-fern-sdk-group-name:
+        - issuing
+        - token
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name:
+        - issuing
+        - token
+      x-fern-sdk-method-name: update
+  /v1/issuing/transactions:
+    get:
+      x-fern-sdk-group-name:
+        - issuing
+        - transaction
+      x-fern-sdk-method-name: list
+  /v1/issuing/transactions/{transaction}:
+    get:
+      x-fern-sdk-group-name:
+        - issuing
+        - transaction
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name:
+        - issuing
+        - transaction
+      x-fern-sdk-method-name: update
+  /v1/test_helpers/issuing/transactions/{transaction}/refund:
+    post:
+      x-fern-sdk-group-name:
+        - issuing
+        - transaction
+      x-fern-sdk-method-name: refund
+  /v1/test_helpers/issuing/transactions/create_force_capture:
+    post:
+      x-fern-sdk-group-name:
+        - issuing
+        - transaction
+      x-fern-sdk-method-name: create_force_capture
+  /v1/test_helpers/issuing/transactions/create_unlinked_refund:
+    post:
+      x-fern-sdk-group-name:
+        - issuing
+        - transaction
+      x-fern-sdk-method-name: create_unlinked_refund
+  /v1/invoices/{invoice}/lines:
+    get:
+      x-fern-sdk-group-name: line_item
+      x-fern-sdk-method-name: list
+  /v1/invoices/{invoice}/lines/{line_item_id}:
+    post:
+      x-fern-sdk-group-name: line_item
+      x-fern-sdk-method-name: update
+  /v1/accounts/{account}/login_links:
+    post:
+      x-fern-sdk-group-name: login_link
+      x-fern-sdk-method-name: create
+  /v1/mandates/{mandate}:
+    get:
+      x-fern-sdk-group-name: mandate
+      x-fern-sdk-method-name: retrieve
+  /v1/payment_intents:
+    get:
+      x-fern-sdk-group-name: payment_intent
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: payment_intent
+      x-fern-sdk-method-name: create
+  /v1/payment_intents/{intent}:
+    get:
+      x-fern-sdk-group-name: payment_intent
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name: payment_intent
+      x-fern-sdk-method-name: update
+  /v1/payment_intents/search:
+    get:
+      x-fern-sdk-group-name: payment_intent
+      x-fern-sdk-method-name: search
+  /v1/payment_intents/{intent}/apply_customer_balance:
+    post:
+      x-fern-sdk-group-name: payment_intent
+      x-fern-sdk-method-name: apply_customer_balance
+  /v1/payment_intents/{intent}/cancel:
+    post:
+      x-fern-sdk-group-name: payment_intent
+      x-fern-sdk-method-name: cancel
+  /v1/payment_intents/{intent}/capture:
+    post:
+      x-fern-sdk-group-name: payment_intent
+      x-fern-sdk-method-name: capture
+  /v1/payment_intents/{intent}/confirm:
+    post:
+      x-fern-sdk-group-name: payment_intent
+      x-fern-sdk-method-name: confirm
+  /v1/payment_intents/{intent}/increment_authorization:
+    post:
+      x-fern-sdk-group-name: payment_intent
+      x-fern-sdk-method-name: increment_authorization
+  /v1/payment_intents/{intent}/verify_microdeposits:
+    post:
+      x-fern-sdk-group-name: payment_intent
+      x-fern-sdk-method-name: verify_microdeposits
+  /v1/payment_links:
+    get:
+      x-fern-sdk-group-name: payment_link
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: payment_link
+      x-fern-sdk-method-name: create
+  /v1/payment_links/{payment_link}:
+    get:
+      x-fern-sdk-group-name: payment_link
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name: payment_link
+      x-fern-sdk-method-name: update
+  /v1/payment_links/{payment_link}/line_items:
+    get:
+      x-fern-sdk-group-name: payment_link
+      x-fern-sdk-method-name: list_line_items
+  /v1/payment_methods:
+    get:
+      x-fern-sdk-group-name: payment_method
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: payment_method
+      x-fern-sdk-method-name: create
+  /v1/payment_methods/{payment_method}:
+    get:
+      x-fern-sdk-group-name: payment_method
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name: payment_method
+      x-fern-sdk-method-name: update
+  /v1/payment_methods/{payment_method}/attach:
+    post:
+      x-fern-sdk-group-name: payment_method
+      x-fern-sdk-method-name: attach
+  /v1/payment_methods/{payment_method}/detach:
+    post:
+      x-fern-sdk-group-name: payment_method
+      x-fern-sdk-method-name: detach
+  /v1/payment_method_configurations:
+    get:
+      x-fern-sdk-group-name: payment_method_configuration
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: payment_method_configuration
+      x-fern-sdk-method-name: create
+  /v1/payment_method_configurations/{configuration}:
+    get:
+      x-fern-sdk-group-name: payment_method_configuration
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name: payment_method_configuration
+      x-fern-sdk-method-name: update
+  /v1/payment_method_domains:
+    get:
+      x-fern-sdk-group-name: payment_method_domain
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: payment_method_domain
+      x-fern-sdk-method-name: create
+  /v1/payment_method_domains/{payment_method_domain}:
+    get:
+      x-fern-sdk-group-name: payment_method_domain
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name: payment_method_domain
+      x-fern-sdk-method-name: update
+  /v1/payment_method_domains/{payment_method_domain}/validate:
+    post:
+      x-fern-sdk-group-name: payment_method_domain
+      x-fern-sdk-method-name: validate
+  /v1/customers/{customer}/sources:
+    get:
+      x-fern-sdk-group-name: payment_source
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: payment_source
+      x-fern-sdk-method-name: create
+  /v1/customers/{customer}/sources/{id}:
+    get:
+      x-fern-sdk-group-name: payment_source
+      x-fern-sdk-method-name: retrieve
+    delete:
+      x-fern-sdk-group-name: source
+      x-fern-sdk-method-name: detach
+  /v1/payouts:
+    get:
+      x-fern-sdk-group-name: payout
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: payout
+      x-fern-sdk-method-name: create
+  /v1/payouts/{payout}:
+    get:
+      x-fern-sdk-group-name: payout
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name: payout
+      x-fern-sdk-method-name: update
+  /v1/payouts/{payout}/cancel:
+    post:
+      x-fern-sdk-group-name: payout
+      x-fern-sdk-method-name: cancel
+  /v1/payouts/{payout}/reverse:
+    post:
+      x-fern-sdk-group-name: payout
+      x-fern-sdk-method-name: reverse
+  /v1/accounts/{account}/persons/{person}:
+    delete:
+      x-fern-sdk-group-name: person
+      x-fern-sdk-method-name: delete
+    get:
+      x-fern-sdk-group-name: person
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name: person
+      x-fern-sdk-method-name: update
+  /v1/plans/{plan}:
+    delete:
+      x-fern-sdk-group-name: plan
+      x-fern-sdk-method-name: delete
+    get:
+      x-fern-sdk-group-name: plan
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name: plan
+      x-fern-sdk-method-name: update
+  /v1/plans:
+    get:
+      x-fern-sdk-group-name: plan
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: plan
+      x-fern-sdk-method-name: create
+  /v1/prices:
+    get:
+      x-fern-sdk-group-name: price
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: price
+      x-fern-sdk-method-name: create
+  /v1/prices/{price}:
+    get:
+      x-fern-sdk-group-name: price
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name: price
+      x-fern-sdk-method-name: update
+  /v1/prices/search:
+    get:
+      x-fern-sdk-group-name: price
+      x-fern-sdk-method-name: search
+  /v1/products/{id}:
+    delete:
+      x-fern-sdk-group-name: product
+      x-fern-sdk-method-name: delete
+    get:
+      x-fern-sdk-group-name: product
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name: product
+      x-fern-sdk-method-name: update
+  /v1/products:
+    get:
+      x-fern-sdk-group-name: product
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: product
+      x-fern-sdk-method-name: create
+  /v1/products/search:
+    get:
+      x-fern-sdk-group-name: product
+      x-fern-sdk-method-name: search
+  /v1/products/{product}/features/{id}:
+    delete:
+      x-fern-sdk-group-name: product_feature
+      x-fern-sdk-method-name: delete
+    get:
+      x-fern-sdk-group-name: product_feature
+      x-fern-sdk-method-name: retrieve
+  /v1/products/{product}/features:
+    get:
+      x-fern-sdk-group-name: product_feature
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: product_feature
+      x-fern-sdk-method-name: create
+  /v1/promotion_codes:
+    get:
+      x-fern-sdk-group-name: promotion_code
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: promotion_code
+      x-fern-sdk-method-name: create
+  /v1/promotion_codes/{promotion_code}:
+    get:
+      x-fern-sdk-group-name: promotion_code
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name: promotion_code
+      x-fern-sdk-method-name: update
+  /v1/quotes:
+    get:
+      x-fern-sdk-group-name: quote
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: quote
+      x-fern-sdk-method-name: create
+  /v1/quotes/{quote}:
+    get:
+      x-fern-sdk-group-name: quote
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name: quote
+      x-fern-sdk-method-name: update
+  /v1/quotes/{quote}/computed_upfront_line_items:
+    get:
+      x-fern-sdk-group-name: quote
+      x-fern-sdk-method-name: list_computed_upfront_line_items
+  /v1/quotes/{quote}/line_items:
+    get:
+      x-fern-sdk-group-name: quote
+      x-fern-sdk-method-name: list_line_items
+  /v1/quotes/{quote}/accept:
+    post:
+      x-fern-sdk-group-name: quote
+      x-fern-sdk-method-name: accept
+  /v1/quotes/{quote}/cancel:
+    post:
+      x-fern-sdk-group-name: quote
+      x-fern-sdk-method-name: cancel
+  /v1/quotes/{quote}/finalize:
+    post:
+      x-fern-sdk-group-name: quote
+      x-fern-sdk-method-name: finalize_quote
+  /v1/quotes/{quote}/pdf:
+    get:
+      x-fern-sdk-group-name: quote
+      x-fern-sdk-method-name: pdf
+  /v1/radar/early_fraud_warnings:
+    get:
+      x-fern-sdk-group-name:
+        - radar
+        - early_fraud_warning
+      x-fern-sdk-method-name: list
+  /v1/radar/early_fraud_warnings/{early_fraud_warning}:
+    get:
+      x-fern-sdk-group-name:
+        - radar
+        - early_fraud_warning
+      x-fern-sdk-method-name: retrieve
+  /v1/radar/value_lists/{value_list}:
+    delete:
+      x-fern-sdk-group-name:
+        - radar
+        - value_list
+      x-fern-sdk-method-name: delete
+    get:
+      x-fern-sdk-group-name:
+        - radar
+        - value_list
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name:
+        - radar
+        - value_list
+      x-fern-sdk-method-name: update
+  /v1/radar/value_lists:
+    get:
+      x-fern-sdk-group-name:
+        - radar
+        - value_list
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name:
+        - radar
+        - value_list
+      x-fern-sdk-method-name: create
+  /v1/radar/value_list_items/{item}:
+    delete:
+      x-fern-sdk-group-name:
+        - radar
+        - value_list_item
+      x-fern-sdk-method-name: delete
+    get:
+      x-fern-sdk-group-name:
+        - radar
+        - value_list_item
+      x-fern-sdk-method-name: retrieve
+  /v1/radar/value_list_items:
+    get:
+      x-fern-sdk-group-name:
+        - radar
+        - value_list_item
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name:
+        - radar
+        - value_list_item
+      x-fern-sdk-method-name: create
+  /v1/refunds:
+    get:
+      x-fern-sdk-group-name: refund
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: refund
+      x-fern-sdk-method-name: create
+  /v1/refunds/{refund}:
+    get:
+      x-fern-sdk-group-name: refund
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name: refund
+      x-fern-sdk-method-name: update
+  /v1/refunds/{refund}/cancel:
+    post:
+      x-fern-sdk-group-name: refund
+      x-fern-sdk-method-name: cancel
+  /v1/test_helpers/refunds/{refund}/expire:
+    post:
+      x-fern-sdk-group-name: refund
+      x-fern-sdk-method-name: expire
+  /v1/reporting/report_runs:
+    get:
+      x-fern-sdk-group-name:
+        - reporting
+        - report_run
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name:
+        - reporting
+        - report_run
+      x-fern-sdk-method-name: create
+  /v1/reporting/report_runs/{report_run}:
+    get:
+      x-fern-sdk-group-name:
+        - reporting
+        - report_run
+      x-fern-sdk-method-name: retrieve
+  /v1/reporting/report_types:
+    get:
+      x-fern-sdk-group-name:
+        - reporting
+        - report_type
+      x-fern-sdk-method-name: list
+  /v1/reporting/report_types/{report_type}:
+    get:
+      x-fern-sdk-group-name:
+        - reporting
+        - report_type
+      x-fern-sdk-method-name: retrieve
+  /v1/reviews:
+    get:
+      x-fern-sdk-group-name: review
+      x-fern-sdk-method-name: list
+  /v1/reviews/{review}:
+    get:
+      x-fern-sdk-group-name: review
+      x-fern-sdk-method-name: retrieve
+  /v1/reviews/{review}/approve:
+    post:
+      x-fern-sdk-group-name: review
+      x-fern-sdk-method-name: approve
+  /v1/sigma/scheduled_query_runs:
+    get:
+      x-fern-sdk-group-name: scheduled_query_run
+      x-fern-sdk-method-name: list
+  /v1/sigma/scheduled_query_runs/{scheduled_query_run}:
+    get:
+      x-fern-sdk-group-name: scheduled_query_run
+      x-fern-sdk-method-name: retrieve
+  /v1/setup_attempts:
+    get:
+      x-fern-sdk-group-name: setup_attempt
+      x-fern-sdk-method-name: list
+  /v1/setup_intents:
+    get:
+      x-fern-sdk-group-name: setup_intent
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: setup_intent
+      x-fern-sdk-method-name: create
+  /v1/setup_intents/{intent}:
+    get:
+      x-fern-sdk-group-name: setup_intent
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name: setup_intent
+      x-fern-sdk-method-name: update
+  /v1/setup_intents/{intent}/cancel:
+    post:
+      x-fern-sdk-group-name: setup_intent
+      x-fern-sdk-method-name: cancel
+  /v1/setup_intents/{intent}/confirm:
+    post:
+      x-fern-sdk-group-name: setup_intent
+      x-fern-sdk-method-name: confirm
+  /v1/setup_intents/{intent}/verify_microdeposits:
+    post:
+      x-fern-sdk-group-name: setup_intent
+      x-fern-sdk-method-name: verify_microdeposits
+  /v1/shipping_rates:
+    get:
+      x-fern-sdk-group-name: shipping_rate
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: shipping_rate
+      x-fern-sdk-method-name: create
+  /v1/shipping_rates/{shipping_rate_token}:
+    get:
+      x-fern-sdk-group-name: shipping_rate
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name: shipping_rate
+      x-fern-sdk-method-name: update
+  /v1/sources/{source}:
+    get:
+      x-fern-sdk-group-name: source
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name: source
+      x-fern-sdk-method-name: update
+  /v1/sources/{source}/source_transactions:
+    get:
+      x-fern-sdk-group-name: source
+      x-fern-sdk-method-name: source_transactions
+  /v1/sources:
+    post:
+      x-fern-sdk-group-name: source
+      x-fern-sdk-method-name: create
+  /v1/sources/{source}/verify:
+    post:
+      x-fern-sdk-group-name: source
+      x-fern-sdk-method-name: verify
+  /v1/subscriptions/{subscription_exposed_id}:
+    delete:
+      x-fern-sdk-group-name: subscription
+      x-fern-sdk-method-name: cancel
+    get:
+      x-fern-sdk-group-name: subscription
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name: subscription
+      x-fern-sdk-method-name: update
+  /v1/subscriptions/{subscription_exposed_id}/discount:
+    delete:
+      x-fern-sdk-group-name: subscription
+      x-fern-sdk-method-name: delete_discount
+  /v1/subscriptions:
+    get:
+      x-fern-sdk-group-name: subscription
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: subscription
+      x-fern-sdk-method-name: create
+  /v1/subscriptions/search:
+    get:
+      x-fern-sdk-group-name: subscription
+      x-fern-sdk-method-name: search
+  /v1/subscriptions/{subscription}/resume:
+    post:
+      x-fern-sdk-group-name: subscription
+      x-fern-sdk-method-name: resume
+  /v1/subscription_items/{item}:
+    delete:
+      x-fern-sdk-group-name: subscription_item
+      x-fern-sdk-method-name: delete
+    get:
+      x-fern-sdk-group-name: subscription_item
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name: subscription_item
+      x-fern-sdk-method-name: update
+  /v1/subscription_items:
+    get:
+      x-fern-sdk-group-name: subscription_item
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: subscription_item
+      x-fern-sdk-method-name: create
+  /v1/subscription_items/{subscription_item}/usage_record_summaries:
+    get:
+      x-fern-sdk-group-name: usage_record_summary
+      x-fern-sdk-method-name: list
+  /v1/subscription_schedules:
+    get:
+      x-fern-sdk-group-name: subscription_schedule
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: subscription_schedule
+      x-fern-sdk-method-name: create
+  /v1/subscription_schedules/{schedule}:
+    get:
+      x-fern-sdk-group-name: subscription_schedule
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name: subscription_schedule
+      x-fern-sdk-method-name: update
+  /v1/subscription_schedules/{schedule}/cancel:
+    post:
+      x-fern-sdk-group-name: subscription_schedule
+      x-fern-sdk-method-name: cancel
+  /v1/subscription_schedules/{schedule}/release:
+    post:
+      x-fern-sdk-group-name: subscription_schedule
+      x-fern-sdk-method-name: release
+  /v1/tax/calculations/{calculation}:
+    get:
+      x-fern-sdk-group-name:
+        - tax
+        - calculation
+      x-fern-sdk-method-name: retrieve
+  /v1/tax/calculations/{calculation}/line_items:
+    get:
+      x-fern-sdk-group-name:
+        - tax
+        - calculation
+      x-fern-sdk-method-name: list_line_items
+  /v1/tax/calculations:
+    post:
+      x-fern-sdk-group-name:
+        - tax
+        - calculation
+      x-fern-sdk-method-name: create
+  /v1/tax/registrations:
+    get:
+      x-fern-sdk-group-name:
+        - tax
+        - registration
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name:
+        - tax
+        - registration
+      x-fern-sdk-method-name: create
+  /v1/tax/registrations/{id}:
+    get:
+      x-fern-sdk-group-name:
+        - tax
+        - registration
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name:
+        - tax
+        - registration
+      x-fern-sdk-method-name: update
+  /v1/tax/settings:
+    get:
+      x-fern-sdk-group-name:
+        - tax
+        - settings
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name:
+        - tax
+        - settings
+      x-fern-sdk-method-name: update
+  /v1/tax/transactions/{transaction}:
+    get:
+      x-fern-sdk-group-name:
+        - tax
+        - transaction
+      x-fern-sdk-method-name: retrieve
+  /v1/tax/transactions/{transaction}/line_items:
+    get:
+      x-fern-sdk-group-name:
+        - tax
+        - transaction
+      x-fern-sdk-method-name: list_line_items
+  /v1/tax/transactions/create_from_calculation:
+    post:
+      x-fern-sdk-group-name:
+        - tax
+        - transaction
+      x-fern-sdk-method-name: create_from_calculation
+  /v1/tax/transactions/create_reversal:
+    post:
+      x-fern-sdk-group-name:
+        - tax
+        - transaction
+      x-fern-sdk-method-name: create_reversal
+  /v1/tax_codes:
+    get:
+      x-fern-sdk-group-name: tax_code
+      x-fern-sdk-method-name: list
+  /v1/tax_codes/{id}:
+    get:
+      x-fern-sdk-group-name: tax_code
+      x-fern-sdk-method-name: retrieve
+  /v1/customers/{customer}/tax_ids/{id}:
+    delete:
+      x-fern-sdk-group-name: tax_id
+      x-fern-sdk-method-name: delete
+    get:
+      x-fern-sdk-group-name: tax_id
+      x-fern-sdk-method-name: retrieve
+  /v1/customers/{customer}/tax_ids:
+    get:
+      x-fern-sdk-group-name: tax_id
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: tax_id
+      x-fern-sdk-method-name: create
+  /v1/tax_rates:
+    get:
+      x-fern-sdk-group-name: tax_rate
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: tax_rate
+      x-fern-sdk-method-name: create
+  /v1/tax_rates/{tax_rate}:
+    get:
+      x-fern-sdk-group-name: tax_rate
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name: tax_rate
+      x-fern-sdk-method-name: update
+  /v1/terminal/configurations/{configuration}:
+    delete:
+      x-fern-sdk-group-name:
+        - terminal
+        - configuration
+      x-fern-sdk-method-name: delete
+    get:
+      x-fern-sdk-group-name:
+        - terminal
+        - configuration
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name:
+        - terminal
+        - configuration
+      x-fern-sdk-method-name: update
+  /v1/terminal/configurations:
+    get:
+      x-fern-sdk-group-name:
+        - terminal
+        - configuration
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name:
+        - terminal
+        - configuration
+      x-fern-sdk-method-name: create
+  /v1/terminal/connection_tokens:
+    post:
+      x-fern-sdk-group-name:
+        - terminal
+        - connection_token
+      x-fern-sdk-method-name: create
+  /v1/terminal/locations/{location}:
+    delete:
+      x-fern-sdk-group-name:
+        - terminal
+        - location
+      x-fern-sdk-method-name: delete
+    get:
+      x-fern-sdk-group-name:
+        - terminal
+        - location
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name:
+        - terminal
+        - location
+      x-fern-sdk-method-name: update
+  /v1/terminal/locations:
+    get:
+      x-fern-sdk-group-name:
+        - terminal
+        - location
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name:
+        - terminal
+        - location
+      x-fern-sdk-method-name: create
+  /v1/terminal/readers/{reader}:
+    delete:
+      x-fern-sdk-group-name:
+        - terminal
+        - reader
+      x-fern-sdk-method-name: delete
+    get:
+      x-fern-sdk-group-name:
+        - terminal
+        - reader
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name:
+        - terminal
+        - reader
+      x-fern-sdk-method-name: update
+  /v1/terminal/readers:
+    get:
+      x-fern-sdk-group-name:
+        - terminal
+        - reader
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name:
+        - terminal
+        - reader
+      x-fern-sdk-method-name: create
+  /v1/terminal/readers/{reader}/cancel_action:
+    post:
+      x-fern-sdk-group-name:
+        - terminal
+        - reader
+      x-fern-sdk-method-name: cancel_action
+  /v1/terminal/readers/{reader}/process_payment_intent:
+    post:
+      x-fern-sdk-group-name:
+        - terminal
+        - reader
+      x-fern-sdk-method-name: process_payment_intent
+  /v1/terminal/readers/{reader}/process_setup_intent:
+    post:
+      x-fern-sdk-group-name:
+        - terminal
+        - reader
+      x-fern-sdk-method-name: process_setup_intent
+  /v1/terminal/readers/{reader}/refund_payment:
+    post:
+      x-fern-sdk-group-name:
+        - terminal
+        - reader
+      x-fern-sdk-method-name: refund_payment
+  /v1/terminal/readers/{reader}/set_reader_display:
+    post:
+      x-fern-sdk-group-name:
+        - terminal
+        - reader
+      x-fern-sdk-method-name: set_reader_display
+  /v1/test_helpers/terminal/readers/{reader}/present_payment_method:
+    post:
+      x-fern-sdk-group-name:
+        - terminal
+        - reader
+      x-fern-sdk-method-name: present_payment_method
+  /v1/test_helpers/test_clocks/{test_clock}:
+    delete:
+      x-fern-sdk-group-name:
+        - test_helpers
+        - test_clock
+      x-fern-sdk-method-name: delete
+    get:
+      x-fern-sdk-group-name:
+        - test_helpers
+        - test_clock
+      x-fern-sdk-method-name: retrieve
+  /v1/test_helpers/test_clocks:
+    get:
+      x-fern-sdk-group-name:
+        - test_helpers
+        - test_clock
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name:
+        - test_helpers
+        - test_clock
+      x-fern-sdk-method-name: create
+  /v1/test_helpers/test_clocks/{test_clock}/advance:
+    post:
+      x-fern-sdk-group-name:
+        - test_helpers
+        - test_clock
+      x-fern-sdk-method-name: advance
+  /v1/tokens/{token}:
+    get:
+      x-fern-sdk-group-name: token
+      x-fern-sdk-method-name: retrieve
+  /v1/tokens:
+    post:
+      x-fern-sdk-group-name: token
+      x-fern-sdk-method-name: create
+  /v1/topups:
+    get:
+      x-fern-sdk-group-name: topup
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: topup
+      x-fern-sdk-method-name: create
+  /v1/topups/{topup}:
+    get:
+      x-fern-sdk-group-name: topup
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name: topup
+      x-fern-sdk-method-name: update
+  /v1/topups/{topup}/cancel:
+    post:
+      x-fern-sdk-group-name: topup
+      x-fern-sdk-method-name: cancel
+  /v1/transfers:
+    get:
+      x-fern-sdk-group-name: transfer
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: transfer
+      x-fern-sdk-method-name: create
+  /v1/transfers/{transfer}:
+    get:
+      x-fern-sdk-group-name: transfer
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name: transfer
+      x-fern-sdk-method-name: update
+  /v1/transfers/{id}/reversals:
+    get:
+      x-fern-sdk-group-name: transfer_reversal
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: transfer_reversal
+      x-fern-sdk-method-name: create
+  /v1/transfers/{transfer}/reversals/{id}:
+    get:
+      x-fern-sdk-group-name: transfer_reversal
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name: transfer_reversal
+      x-fern-sdk-method-name: update
+  /v1/treasury/credit_reversals:
+    get:
+      x-fern-sdk-group-name:
+        - treasury
+        - credit_reversal
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name:
+        - treasury
+        - credit_reversal
+      x-fern-sdk-method-name: create
+  /v1/treasury/credit_reversals/{credit_reversal}:
+    get:
+      x-fern-sdk-group-name:
+        - treasury
+        - credit_reversal
+      x-fern-sdk-method-name: retrieve
+  /v1/treasury/debit_reversals:
+    get:
+      x-fern-sdk-group-name:
+        - treasury
+        - debit_reversal
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name:
+        - treasury
+        - debit_reversal
+      x-fern-sdk-method-name: create
+  /v1/treasury/debit_reversals/{debit_reversal}:
+    get:
+      x-fern-sdk-group-name:
+        - treasury
+        - debit_reversal
+      x-fern-sdk-method-name: retrieve
+  /v1/treasury/financial_accounts:
+    get:
+      x-fern-sdk-group-name:
+        - treasury
+        - financial_account
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name:
+        - treasury
+        - financial_account
+      x-fern-sdk-method-name: create
+  /v1/treasury/financial_accounts/{financial_account}:
+    get:
+      x-fern-sdk-group-name:
+        - treasury
+        - financial_account
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name:
+        - treasury
+        - financial_account
+      x-fern-sdk-method-name: update
+  /v1/treasury/financial_accounts/{financial_account}/features:
+    get:
+      x-fern-sdk-group-name:
+        - treasury
+        - financial_account
+      x-fern-sdk-method-name: retrieve_features
+    post:
+      x-fern-sdk-group-name:
+        - treasury
+        - financial_account
+      x-fern-sdk-method-name: update_features
+  /v1/treasury/financial_accounts/{financial_account}/close:
+    post:
+      x-fern-sdk-group-name:
+        - treasury
+        - financial_account
+      x-fern-sdk-method-name: close
+  /v1/treasury/inbound_transfers:
+    get:
+      x-fern-sdk-group-name:
+        - treasury
+        - inbound_transfer
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name:
+        - treasury
+        - inbound_transfer
+      x-fern-sdk-method-name: create
+  /v1/treasury/inbound_transfers/{id}:
+    get:
+      x-fern-sdk-group-name:
+        - treasury
+        - inbound_transfer
+      x-fern-sdk-method-name: retrieve
+  /v1/test_helpers/treasury/inbound_transfers/{id}/fail:
+    post:
+      x-fern-sdk-group-name:
+        - treasury
+        - inbound_transfer
+      x-fern-sdk-method-name: fail
+  /v1/test_helpers/treasury/inbound_transfers/{id}/return:
+    post:
+      x-fern-sdk-group-name:
+        - treasury
+        - inbound_transfer
+      x-fern-sdk-method-name: return_inbound_transfer
+  /v1/test_helpers/treasury/inbound_transfers/{id}/succeed:
+    post:
+      x-fern-sdk-group-name:
+        - treasury
+        - inbound_transfer
+      x-fern-sdk-method-name: succeed
+  /v1/treasury/inbound_transfers/{inbound_transfer}/cancel:
+    post:
+      x-fern-sdk-group-name:
+        - treasury
+        - inbound_transfer
+      x-fern-sdk-method-name: cancel
+  /v1/treasury/outbound_payments:
+    get:
+      x-fern-sdk-group-name:
+        - treasury
+        - outbound_payment
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name:
+        - treasury
+        - outbound_payment
+      x-fern-sdk-method-name: create
+  /v1/treasury/outbound_payments/{id}:
+    get:
+      x-fern-sdk-group-name:
+        - treasury
+        - outbound_payment
+      x-fern-sdk-method-name: retrieve
+  /v1/test_helpers/treasury/outbound_payments/{id}:
+    post:
+      x-fern-sdk-group-name:
+        - treasury
+        - outbound_payment
+      x-fern-sdk-method-name: update
+  /v1/test_helpers/treasury/outbound_payments/{id}/fail:
+    post:
+      x-fern-sdk-group-name:
+        - treasury
+        - outbound_payment
+      x-fern-sdk-method-name: fail
+  /v1/test_helpers/treasury/outbound_payments/{id}/post:
+    post:
+      x-fern-sdk-group-name:
+        - treasury
+        - outbound_payment
+      x-fern-sdk-method-name: post
+  /v1/test_helpers/treasury/outbound_payments/{id}/return:
+    post:
+      x-fern-sdk-group-name:
+        - treasury
+        - outbound_payment
+      x-fern-sdk-method-name: return_outbound_payment
+  /v1/treasury/outbound_payments/{id}/cancel:
+    post:
+      x-fern-sdk-group-name:
+        - treasury
+        - outbound_payment
+      x-fern-sdk-method-name: cancel
+  /v1/treasury/outbound_transfers:
+    get:
+      x-fern-sdk-group-name:
+        - treasury
+        - outbound_transfer
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name:
+        - treasury
+        - outbound_transfer
+      x-fern-sdk-method-name: create
+  /v1/treasury/outbound_transfers/{outbound_transfer}:
+    get:
+      x-fern-sdk-group-name:
+        - treasury
+        - outbound_transfer
+      x-fern-sdk-method-name: retrieve
+  /v1/test_helpers/treasury/outbound_transfers/{outbound_transfer}:
+    post:
+      x-fern-sdk-group-name:
+        - treasury
+        - outbound_transfer
+      x-fern-sdk-method-name: update
+  /v1/test_helpers/treasury/outbound_transfers/{outbound_transfer}/fail:
+    post:
+      x-fern-sdk-group-name:
+        - treasury
+        - outbound_transfer
+      x-fern-sdk-method-name: fail
+  /v1/test_helpers/treasury/outbound_transfers/{outbound_transfer}/post:
+    post:
+      x-fern-sdk-group-name:
+        - treasury
+        - outbound_transfer
+      x-fern-sdk-method-name: post
+  /v1/test_helpers/treasury/outbound_transfers/{outbound_transfer}/return:
+    post:
+      x-fern-sdk-group-name:
+        - treasury
+        - outbound_transfer
+      x-fern-sdk-method-name: return_outbound_transfer
+  /v1/treasury/outbound_transfers/{outbound_transfer}/cancel:
+    post:
+      x-fern-sdk-group-name:
+        - treasury
+        - outbound_transfer
+      x-fern-sdk-method-name: cancel
+  /v1/treasury/received_credits:
+    get:
+      x-fern-sdk-group-name:
+        - treasury
+        - received_credit
+      x-fern-sdk-method-name: list
+  /v1/treasury/received_credits/{id}:
+    get:
+      x-fern-sdk-group-name:
+        - treasury
+        - received_credit
+      x-fern-sdk-method-name: retrieve
+  /v1/test_helpers/treasury/received_credits:
+    post:
+      x-fern-sdk-group-name:
+        - treasury
+        - received_credit
+      x-fern-sdk-method-name: create
+  /v1/treasury/received_debits:
+    get:
+      x-fern-sdk-group-name:
+        - treasury
+        - received_debit
+      x-fern-sdk-method-name: list
+  /v1/treasury/received_debits/{id}:
+    get:
+      x-fern-sdk-group-name:
+        - treasury
+        - received_debit
+      x-fern-sdk-method-name: retrieve
+  /v1/test_helpers/treasury/received_debits:
+    post:
+      x-fern-sdk-group-name:
+        - treasury
+        - received_debit
+      x-fern-sdk-method-name: create
+  /v1/treasury/transactions:
+    get:
+      x-fern-sdk-group-name:
+        - treasury
+        - transaction
+      x-fern-sdk-method-name: list
+  /v1/treasury/transactions/{id}:
+    get:
+      x-fern-sdk-group-name:
+        - treasury
+        - transaction
+      x-fern-sdk-method-name: retrieve
+  /v1/treasury/transaction_entries:
+    get:
+      x-fern-sdk-group-name:
+        - treasury
+        - transaction_entry
+      x-fern-sdk-method-name: list
+  /v1/treasury/transaction_entries/{id}:
+    get:
+      x-fern-sdk-group-name:
+        - treasury
+        - transaction_entry
+      x-fern-sdk-method-name: retrieve
+  /v1/subscription_items/{subscription_item}/usage_records:
+    post:
+      x-fern-sdk-group-name: usage_record
+      x-fern-sdk-method-name: create
+  /v1/webhook_endpoints/{webhook_endpoint}:
+    delete:
+      x-fern-sdk-group-name: webhook_endpoint
+      x-fern-sdk-method-name: delete
+    get:
+      x-fern-sdk-group-name: webhook_endpoint
+      x-fern-sdk-method-name: retrieve
+    post:
+      x-fern-sdk-group-name: webhook_endpoint
+      x-fern-sdk-method-name: update
+  /v1/webhook_endpoints:
+    get:
+      x-fern-sdk-group-name: webhook_endpoint
+      x-fern-sdk-method-name: list
+    post:
+      x-fern-sdk-group-name: webhook_endpoint
+      x-fern-sdk-method-name: create
+components:
+  schemas:
+    balance_transaction:
+      properties:
+        source:
+          x-fern-type-name: balance_transaction_source_or_id
+    subscription:
+      properties:
+        schedule:
+          x-fern-type-name: subscription_schedule_or_id
+    financial_connections.account:
+      properties:
+        ownership:
+          x-fern-type-name: financial_connections_account_ownership_or_id
