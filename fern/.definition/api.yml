@@ -1,0 +1,13 @@
+auth: BasicAuthScheme
+auth-schemes:
+  BasicAuthScheme:
+    scheme: basic
+  BearerAuthScheme:
+    scheme: bearer
+default-environment: Default
+display-name: Stripe API
+environments:
+  Default: https://api.stripe.com/
+error-discrimination:
+  strategy: status-code
+name: api

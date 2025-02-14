@@ -12,14 +12,12 @@ groups:
       - name: fernapi/fern-typescript-node-sdk
         version: 0.48.5
         output:
-          location: npm
-          package-name: stripe
-        github: 
-          repository: stripe-demo/stripe-node
+          location: local-file-system
+          path: ../generated/ts
         metadata:
           license: MIT
         smart-casing: true
-        config: 
+        config:
           noSerdeLayer: true
           enableInlineTypes: true
           namespaceExport: Stripe

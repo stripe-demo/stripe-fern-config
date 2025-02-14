@@ -1,0 +1,144 @@
+imports:
+  root: __package__.yml
+types:
+  FileCreateRequestFileLinkData:
+    docs: >-
+      Optional parameters that automatically create a [file
+      link](https://stripe.com/docs/api#file_links) for the newly created file.
+    inline: true
+    properties:
+      create:
+        docs: >-
+          Set this to `true` to create a file link for the newly created file.
+          Creating a link is only possible when the file's `purpose` is one of
+          the following: `business_icon`, `business_logo`, `customer_signature`,
+          `dispute_evidence`, `issuing_regulatory_reporting`, `pci_document`,
+          `tax_document_user_upload`, or `terminal_reader_splashscreen`.
+        type: boolean
+      expires_at:
+        docs: The link isn't available after this future timestamp.
+        type: optional<integer>
+      metadata:
+        docs: >-
+          Set of [key-value pairs](https://stripe.com/docs/api/metadata) that
+          you can attach to an object. This can be useful for storing additional
+          information about the object in a structured format. Individual keys
+          can be unset by posting an empty value to them. All keys can be unset
+          by posting an empty value to `metadata`.
+        type: optional<FileCreateRequestFileLinkDataMetadata>
+    source:
+      openapi: ../openapi.yaml
+  FileCreateRequestFileLinkDataMetadata:
+    discriminated: false
+    docs: >-
+      Set of [key-value pairs](https://stripe.com/docs/api/metadata) that you
+      can attach to an object. This can be useful for storing additional
+      information about the object in a structured format. Individual keys can
+      be unset by posting an empty value to them. All keys can be unset by
+      posting an empty value to `metadata`.
+    inline: true
+    source:
+      openapi: ../openapi.yaml
+    union:
+      - map<string, string>
+      - literal<"">
+  FileCreateRequestPurpose:
+    docs: >-
+      The [purpose](https://stripe.com/docs/file-upload#uploading-a-file) of the
+      uploaded file.
+    enum:
+      - account_requirement
+      - additional_verification
+      - business_icon
+      - business_logo
+      - customer_signature
+      - dispute_evidence
+      - identity_document
+      - issuing_regulatory_reporting
+      - pci_document
+      - tax_document_user_upload
+      - terminal_reader_splashscreen
+    inline: true
+    source:
+      openapi: ../openapi.yaml
+service:
+  auth: false
+  base-path: ''
+  endpoints:
+    create:
+      auth: true
+      display-name: Create a file
+      docs: >-
+        <p>To upload a file to Stripe, you need to send a request of type
+        <code>multipart/form-data</code>. Include the file you want to upload in
+        the request, and the parameters for creating a file.</p>
+
+
+        <p>All of Stripe’s officially supported Client libraries support sending
+        <code>multipart/form-data</code>.</p>
+      examples:
+        - request:
+            purpose: account_requirement
+          response:
+            body:
+              created: 1
+              expires_at: 1
+              filename: filename
+              id: id
+              links:
+                data:
+                  - created: 1
+                    expired: true
+                    file: file
+                    id: id
+                    livemode: true
+                    metadata:
+                      key: value
+                    object: file_link
+                has_more: true
+                object: list
+                url: url
+              object: file
+              purpose: account_requirement
+              size: 1
+              title: title
+              type: type
+              url: url
+      method: POST
+      path: /v1/files
+      request:
+        body:
+          properties:
+            expand:
+              docs: Specifies which fields in the response should be expanded.
+              style: exploded
+              type: optional<list<string>>
+            file:
+              docs: >-
+                A file to upload. Make sure that the specifications follow RFC
+                2388, which defines file transfers for the `multipart/form-data`
+                protocol.
+              type: file
+            file_link_data:
+              docs: >-
+                Optional parameters that automatically create a [file
+                link](https://stripe.com/docs/api#file_links) for the newly
+                created file.
+              style: exploded
+              type: optional<FileCreateRequestFileLinkData>
+            purpose:
+              docs: >-
+                The
+                [purpose](https://stripe.com/docs/file-upload#uploading-a-file)
+                of the uploaded file.
+              type: FileCreateRequestPurpose
+        content-type: multipart/form-data
+        name: FileCreateRequest
+      response:
+        docs: Successful response.
+        status-code: 200
+        type: root.File
+      source:
+        openapi: ../openapi.yaml
+  source:
+    openapi: ../openapi.yaml
